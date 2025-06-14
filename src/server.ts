@@ -13,11 +13,15 @@ const app = express();
 const angularApp = new AngularNodeAppEngine();
 
 console.log();
-console.log(`**************************************************************************************`);
-console.log(`Angular Node App Engine initialized with browser dist folder:`);
-console.log(`${browserDistFolder}`);
-console.log(`**************************************************************************************`);
+console.log(`********************************`);
+console.log(`* Hello from Angular Node App! *`);
+console.log(`********************************`);
 console.log();
+
+app.get('/api/hello', (req, res) => {
+  res.json({ message: 'Hello from the  API!' });
+});
+
 /**
  * Example Express Rest API endpoints can be defined here.
  * Uncomment and define endpoints as necessary.
