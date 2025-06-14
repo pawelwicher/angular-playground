@@ -3,6 +3,12 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-home',
   standalone: true,
-  template: `<h2>Home works!</h2>`
+  template: `
+    <p>{{ title }}</p>
+  `
 })
-export class Home { }
+export class Home {
+
+  protected title = 'Home';
+
+}
