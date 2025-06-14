@@ -1,0 +1,1 @@
+import{Aa as n,Sa as a,Ta as i,Ya as p,Za as s,qa as o}from"./chunk-UI4HCAZU.js";var c=class e{title="About";static \u0275fac=function(t){return new(t||e)};static \u0275cmp=n({type:e,selectors:[["app-about"]],decls:2,vars:1,template:function(t,m){t&1&&(a(0,"p"),p(1),i()),t&2&&(o(),s(m.title))},encapsulation:2})};export{c as About};

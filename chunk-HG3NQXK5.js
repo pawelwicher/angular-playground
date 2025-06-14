@@ -1,0 +1,1 @@
+import{Aa as n,Sa as i,Ta as a,Ya as m,Za as p,qa as o}from"./chunk-UI4HCAZU.js";var s=class t{title="Home";static \u0275fac=function(e){return new(e||t)};static \u0275cmp=n({type:t,selectors:[["app-home"]],decls:2,vars:1,template:function(e,l){e&1&&(i(0,"p"),m(1),a()),e&2&&(o(),p(l.title))},encapsulation:2})};export{s as Home};
