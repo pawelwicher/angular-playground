@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, RouterOutlet } from '@angular/router';
+import { foo } from './components';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,7 @@ import { RouterModule, RouterOutlet } from '@angular/router';
       <a routerLink="/">Home</a>
       <a routerLink="/about">About</a>
       <a routerLink="/posts">Posts</a>
-      <a routerLink="/data">Data</a>
+      <a routerLink="/big-string-array">BigStringArray</a>
     </nav>
     <router-outlet />
   `,
@@ -30,5 +31,9 @@ import { RouterModule, RouterOutlet } from '@angular/router';
 export class App {
 
   protected title = 'Angular Playground';
+
+  public constructor() {
+    const x = foo;
+  }
 
 }

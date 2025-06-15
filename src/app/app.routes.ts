@@ -11,10 +11,10 @@ export const routes: Routes = [
   },
   {
     path: 'posts',
-    loadComponent: () => import('./components/posts').then(m => m.Posts)
+    loadComponent: () => import('./components/all-posts').then(m => m.Posts)
   },
   {
-    path: 'data',
-    loadComponent: () => import('./components/data').then(m => m.Data)
+    path: 'big-string-array',
+    loadComponent: () => import('./components/big-string-array').then(m => m.BigStringArray)
   }
 ];
