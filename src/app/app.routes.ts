@@ -14,7 +14,7 @@ export const routes: Routes = [
     loadComponent: () => import('./components/all-posts').then(m => m.Posts)
   },
   {
-    path: 'big-string-array',
-    loadComponent: () => import('./components/big-string-array').then(m => m.BigStringArray)
+    path: 'form',
+    loadComponent: () => import('./components/form').then(m => m.Form)
   }
 ];
