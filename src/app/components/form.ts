@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { Component, effect, OnInit, Signal, signal } from '@angular/core';
+import { Component, effect, inject, OnInit, Signal, signal } from '@angular/core';
 import { AbstractControl, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { toSignal } from '@angular/core/rxjs-interop';
+import { ActivatedRoute } from '@angular/router';
 
 type FormModel = {
   code: FormControl<string | null>;
@@ -81,6 +82,13 @@ type FormModel = {
   `
 })
 export class Form implements OnInit {
+
+  // providers: [
+  //   provideRouter(appRoutes, withComponentInputBinding()),
+  // ]
+
+  // id = input.required<string>()
+  // hero = computed(() => this.service.getHero(id));
 
   protected title = 'Form';
 
