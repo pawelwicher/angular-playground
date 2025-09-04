@@ -12,10 +12,8 @@ import { RouterModule, RouterOutlet } from '@angular/router';
   template: `
     <h1>{{title}}</h1>
     <nav>
-      <a routerLink="/">Home</a>
-      <a routerLink="/about">About</a>
-      <a routerLink="/posts">Posts</a>
-      <a routerLink="/form">Form</a>
+      <a routerLink="/">Post list</a>
+      <a routerLink="/post-form">Post form</a>
     </nav>
     <router-outlet />
   `,

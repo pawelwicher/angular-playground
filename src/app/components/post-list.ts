@@ -9,7 +9,7 @@ type Post = {
 };
 
 @Component({
-  selector: 'app-posts',
+  selector: 'app-post-list',
   imports: [
     FormsModule
   ],
@@ -36,16 +36,15 @@ type Post = {
     }
   `
 })
-export class Posts {
+export class PostList {
 
-  protected title = 'Posts';
+  protected title = 'Post list';
 
   protected posts = httpResource<Post[]>(
     () => `https://jsonplaceholder.typicode.com/posts${this.postId() ? `?id=${this.postId()}` : ''}`,
     {
       parse: (response) => {
-        //console.log(response); 
-
+        // console.log(response); 
         return response as Post[];
       },
     }

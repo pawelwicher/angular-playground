@@ -1,8 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component, effect, inject, OnInit, Signal, signal } from '@angular/core';
-import { AbstractControl, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { Component, effect, OnInit, Signal } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
-import { ActivatedRoute } from '@angular/router';
+import { AbstractControl, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
 type FormModel = {
   code: FormControl<string | null>;
@@ -12,7 +11,7 @@ type FormModel = {
 }
 
 @Component({
-  selector: 'app-form',
+  selector: 'app-post-form',
   imports: [
     CommonModule,
     ReactiveFormsModule
@@ -81,16 +80,9 @@ type FormModel = {
   }
   `
 })
-export class Form implements OnInit {
+export class PostForm implements OnInit {
 
-  // providers: [
-  //   provideRouter(appRoutes, withComponentInputBinding()),
-  // ]
-
-  // id = input.required<string>()
-  // hero = computed(() => this.service.getHero(id));
-
-  protected title = 'Form';
+  protected title = 'Post form';
 
   protected form = new FormGroup<FormModel>({
     code: new FormControl<string | null>(
